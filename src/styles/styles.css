@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Ubuntu Light', 'Century Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #393939;
+  background-color: #FFF;
+}
+
+.pageLogoContainer {
+  width: 40px;
+  height: 40px;
+  border: 1px solid gray;
+  margin-right: 10px;
+}
+
+.header {
+  display:flex;
+  flex-direction: row;
+  padding: 10px;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+}
+
+.annotationContainer {
+  height: 20px;
+}
+
+.sectionTitle {
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.mainContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.securitiesContainer {
+  text-align: left;
+  max-width: 74%;
+  margin: 20px auto;
+}
+
+.securityTile {
+  min-height: 100px;
+  border: 1px solid black;
+  margin: 20px 0px;
+  padding: 20px;
+  position: relative;
+}
+
+.sec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50%;
+  min-width: 40%;
+  font-size: 18px;
+}
+
+.securityName {
+  margin: 0px 0px 8px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.modalWrapper {
+  border: 1px solid black;
+  min-width: 500px; 
+  max-height: 300px;
+  min-height: 250px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.addAnchor {
+  position: relative;
+}
+
+.addModalButton {
+  width: 150px;
+  height: 54px;
+  font-size: 24px;
+  background: #fff !important;
+  border: 1px solid black;
+}
+
+.addModal {
+  position: absolute;
+  left: 210px;
+  top: 20px;
+  width: 300px;
+}
+
+.editModal {
+  position: absolute;
+  right: 70px;
+  top: 50px;
+
+}
+
+.priceModal {
+  position: absolute;
+  right: 170px;
+  top: 50px;
+}
+
+.priceList {
+  padding-right: 70px;
+  overflow: scroll;
+  max-height: 110px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.priceItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+
+.modalContentContainer {
+  padding: 20px;
+}
+
+.modalButtonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-top: 1px solid black;
+  min-height: 50px;
+  padding: 10px;
+}
+
+.addEditFormFirst {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 10px
+}
+
+.addEditInput {
+  min-width: 00px;
+  min-height: 30px;
+  padding: 4px;
+  font-size: 18px;
+}
+
+.addEditTitle {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* .countryDropdown {
+  min-height: 50px;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 20px;
+  max-width: 200px;
+} */
+
+select {
+	border: 1px solid black;
+	border-radius: 4px;
+	width: 100%;
+	padding: 5px;
+	font-size: 20px;
+  max-width: 200px;
+  
+
+	/* Here's the code we need */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	 -o-appearance: none;
+		appearance: none;
+}
+
+.selectWrapper {
+	position: relative;	
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.position-caret {
+  left: 170px;
+  top: 8px;
+  position: absolute;
+}
+
+.wordButton {
+  border: none;
+  font-size: 20px;
+}
+
+.editButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.addButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.marginRight10 {
+  margin-right: 30px;
+}
+
+.marginRight20 {
+  margin-right: 20px;
+}
+
+.deletePriceBtn {
+  font-size: 16px;
+  border: none;
+}
+
+.priceChangeForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dateChangeInput {
+  max-width: 70px;
+  font-size: 14px;
+}
+
+.priceChangeInput {
+  max-width: 60px;
+  font-size: 14px;
+}
+
+.priceChangeButton {
+  border: 1px solid black;
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 2px;
+}
