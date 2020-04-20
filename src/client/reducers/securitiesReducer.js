@@ -24,6 +24,8 @@ const securitiesReducer = (state = initialState, action) => {
         case types.ADD_SECURITY:
             let newSecurity = action.payload;
             newState.securities[newSecurity.ISIN] = newSecurity;
+            newState.securities[newSecurity.ISIN].isOpen = false;
+            newState.securities[newSecurity.ISIN].pricesOpen = false;
             newState.addIsOpen = false;
             return newState;
             
