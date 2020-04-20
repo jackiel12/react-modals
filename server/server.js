@@ -4,7 +4,7 @@ const path = require('path');
 
 app.use(express.json());
 
-const PORT = 2000;
+const PORT = process.env.PORT || 8080;
 
 
 //if in production, serve static files in the root folder
